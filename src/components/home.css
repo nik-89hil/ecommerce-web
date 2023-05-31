@@ -1,0 +1,55 @@
+.imageSize img{
+    width: 20vw;
+    height: 35vh;
+}
+/* 
+.searchBox {
+    text-align: center;
+
+}
+
+.searchBox input{
+    width: 25vw;
+    margin-top: 10px;
+    font-size: 19px;
+    padding: 8px;
+    color: green;
+    outline: none;
+}
+
+.searchBox button{
+    padding: 9px;
+    font-size: 19px;
+    border: 1px solid green;
+    transition:0.8s;
+}
+
+.searchBox button:hover{
+    background-color: green;
+    color: white;
+    font-weight: 300;
+} */
+/* 
+.cardSetting{
+    max-width: 1000px;
+    margin: 25px;
+    padding: 5px;
+    border: 1px solid black;
+    transition: 0.3s;
+}
+
+.cardSetting:hover{
+    padding: 0px;
+}
+
+
+.cardSetting:hover .bookName,
+.cardSetting:hover .rateBook{
+    color: green;
+    font-weight: 800;
+}
+
+.SpecialFontAwesome i{
+    color: black !important;
+    text-decoration: none;
+} */
