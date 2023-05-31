@@ -8,7 +8,7 @@ import {BOOK_LIST_REQUEST,BOOK_LIST_SUCCESS,BOOK_LIST_FAILS ,
 export const listBooks = () =>  async(dispatch) => {
     try {
         dispatch({type: BOOK_LIST_REQUEST})
-        const {data} = await axios.get('/api/books')
+        const {data} = await axios.get('https://api-ecommerce-n908.onrender.com/api/books')
         dispatch({
             type:BOOK_LIST_SUCCESS,
             payload:data
@@ -29,7 +29,7 @@ export const listBooks = () =>  async(dispatch) => {
 export const listBookDetails = (id) => async(dispatch) => {
     try {
         dispatch({type: BOOK_DETAILS_REQUEST})
-        const {data} = await axios.get(`/api/books/${id}`)
+        const {data} = await axios.get(`https://api-ecommerce-n908.onrender.com/api/books/${id}`)
         dispatch({
             type:BOOK_DETAILS_SUCCESS,
             payload:data
