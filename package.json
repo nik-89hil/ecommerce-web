@@ -1,6 +1,6 @@
 {
   "name": "frontendwork",
-  "proxy": "https://localhost:8080",
+  "proxy": "https://api-ecommerce-n908.onrender.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
