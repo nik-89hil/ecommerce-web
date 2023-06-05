@@ -6,7 +6,7 @@ import { CART_ADD_ITEM, CART_REMOVE_ITEM, CART_SAVE_PAYMENT_METHOD, CART_SAVE_SH
 
 
 export const addtoCart = (id,qty) => async(dispatch,getState)=>{
-    const {data} = await axios.get(`/api/books/${id}`);
+    const {data} = await axios.get(`https://api-ecommerce-n908.onrender.com/api/books/${id}`);
    
     const payload ={
         book:data._id,

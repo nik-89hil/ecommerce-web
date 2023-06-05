@@ -29,7 +29,7 @@ export const listBooks = () =>  async(dispatch) => {
 export const listBookDetails = (id) => async(dispatch) => {
     try {
         dispatch({type: BOOK_DETAILS_REQUEST})
-        const {data} = await axios.get(`/api/books/${id}`)
+        const {data} = await axios.get(`https://api-ecommerce-n908.onrender.com/api/books/${id}`)
         dispatch({
             type:BOOK_DETAILS_SUCCESS,
             payload:data
@@ -49,7 +49,7 @@ export const searchthis = (search) => async(dispatch) => {
     try {
         console.log(search)
         // dispatch({type: BOOK_DETAILS_REQUEST})
-        const {data} = await axios.post(`/home/${search}`)
+        const {data} = await axios.post(`https://api-ecommerce-n908.onrender.com/home/${search}`)
         // dispatch({
         //     type:BOOK_DETAILS_SUCCESS,
         //     payload:data

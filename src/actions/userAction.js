@@ -23,7 +23,7 @@ export const login = (email,password) => async(dispatch) =>{
     try {
         dispatch({type:USER_LOGIN_REQUEST})
         const config = {headers:{'Content-Type':'application/json'}};
-        const {data} = await axios.post("/api/user/login",{email,password},config)
+        const {data} = await axios.post("https://api-ecommerce-n908.onrender.com/api/user/login",{email,password},config)
 
         dispatch({
             type:USER_LOGIN_SUCCESS,
@@ -45,7 +45,7 @@ export const register = (name,email,password) => async(dispatch) =>{
     try {
         dispatch({type:USER_REGISTER_REQUEST})
         const config = {headers:{'Content-Type':'application/json'}};
-        const {data} = await axios.post("/api/user",{name,email,password},config)
+        const {data} = await axios.post("https://api-ecommerce-n908.onrender.com/api/user",{name,email,password},config)
 
         dispatch({
             type:USER_REGISTER_SUCCESS,

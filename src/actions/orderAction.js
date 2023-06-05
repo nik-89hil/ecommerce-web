@@ -23,7 +23,7 @@ export const createOrder = (order) =>async(dispatch,getState)=>{
         // console.log(order,config)
 
 
-        const {data} = await axios.post("/api/order",order,config);
+        const {data} = await axios.post("https://api-ecommerce-n908.onrender.com/api/order",order,config);
         localStorage.setItem("resorderCreate",JSON.stringify(data))
         // console.log(data,"from order Action LIne no. 28...")
         
@@ -63,7 +63,7 @@ export const getOrderDetails = (id) =>async(dispatch,getState)=>{
         // console.log(order,config)
 
 
-        const {data} = await axios.get(`/api/order/${id}`,config);
+        const {data} = await axios.get(`https://api-ecommerce-n908.onrender.com/api/order/${id}`,config);
         localStorage.setItem("resorderCreate",JSON.stringify(data))
         console.log(data[0].OrderItems,"from order Action LIne no. 28...")
         localStorage.setItem("MyList", JSON.stringify(data[0].OrderItems))
@@ -104,7 +104,7 @@ export const listMyOrders = () =>async(dispatch,getState)=>{
         // console.log(order,config)
 
 
-        const {data} = await axios.get(`/api/order/myorders`,config);
+        const {data} = await axios.get(`https://api-ecommerce-n908.onrender.com/api/order/myorders`,config);
         // localStorage.setItem("resorderCreate",JSON.stringify(data))
         // console.log(data,"from order Action LIne no. 28...")
         
