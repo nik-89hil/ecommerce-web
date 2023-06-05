@@ -19,10 +19,10 @@ const Footer = () => {
                 </div>
                 <div className='footerCont2'>
                     <ul>
-                        <li><a href="/home">Home</a></li>
-                        <li><a href="/cart">Cart</a></li>
-                        <li><a href="/classics">Classics</a></li>
-                        <li><a href="/horror">Horror</a></li>
+                        <li><a href="https://ecommerce-booklelu.onrender.com/home">Home</a></li>
+                        <li><a href="https://ecommerce-booklelu.onrender.com/cart">Cart</a></li>
+                        <li><a href="https://ecommerce-booklelu.onrender.com/classics">Classics</a></li>
+                        <li><a href="https://ecommerce-booklelu.onrender.com/horror">Horror</a></li>
                     </ul>
                 </div>
 
