@@ -19,7 +19,7 @@ const Home = () => {
     // dispatch(login(email,password))
 
     if(search.toUpperCase() === "HORROR" || search.toUpperCase() === "HISTORICALFICTION" || search.toUpperCase() ==="HISTORICAL-FICTION"  || search.toUpperCase() === "HISTORICAL FICTION" || search.toUpperCase() === "CLASSIC"){
-      const {data} = await axios.post("/home",{search});
+      const {data} = await axios.post("https://api-ecommerce-n908.onrender.com/home",{search});
       setData(data); 
     }else{
       
