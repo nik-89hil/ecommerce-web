@@ -11,7 +11,7 @@ const Historic = () => {
     const [book,setBook] = useState([]);
     useEffect(()=>{
         const fetchBook = async() =>{
-            const {data} = await axios.get(`/api/historical-fiction`);
+            const {data} = await axios.get(`https://api-ecommerce-n908.onrender.com/api/historical-fiction`);
             setBook(data)
         }
         fetchBook();
